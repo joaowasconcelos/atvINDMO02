@@ -5,20 +5,20 @@ export default function Cursos() {
     return (
         <SafeAreaView style={[styles.container, styles.androidSafeArea]}>
             <ScrollView>
-                <View>
+                <View style={{gap:20,}}>
 
-                    <View >
+                    <View style={styles.teste}>
                         <Text style={styles.container1}>TÉCNICO EM ADMINISTRAÇÃO</Text>
                         <Text style={styles.Text}>O curso técnico de Administração tem por objetivo habilitar profissionais em realizar e gerir processos administrativos das áreas da indústria e de serviços, utilizando-se de técnicas e tecnologias apropriadas e de padrões éticos, legais, de qualidade e segurança, com responsabilidade social e ambiental.</Text>
                     </View>
 
-                    <View >
+                    <View style={styles.teste}>
                         <Text style={styles.container1}>TÉCNICO EM ELETROMECÂNICA</Text>
                         <Text style={styles.Text}>O curso técnico de Eletromecânica tem por objetivo habilitar profissionais no planejamento, no controle e na realização de atividades relativas à manutenção eletromecânica, em conformidade às normas técnicas, ambientais, de qualidade e de segurança e saúde no trabalho.</Text>
                     </View>
 
 
-                    <View>
+                    <View style={styles.teste}>
                         <Text style={styles.container1}>TÉCNICO EM DESENVOLVIMENTO DE SISTEMAS</Text>
                         <Text style={styles.Text}>O Curso Técnico de Desenvolvimento de Sistemas tem por objetivo habilitar profissionais para analisar requisitos funcionais e não funcionais de produtos, desenvolver e testar sistemas de software, de acordo com as especificações do projeto, considerando as boas práticas do mercado de tecnologia da informação e as necessidades do usuário.</Text>
                     </View>
@@ -40,16 +40,18 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-        height: 700,
-        gap: 100,
+        height: "100%",
+        backgroundColor: "#A9A9A9",
+    
 
 
     },
     container1: {
         margin: 10,
         height: 30,
-        backgroundColor: "#A9A9A9",
         textAlign: "center",
+        color:"red",
+        fontWeight:"bold",
     
     },
     Text: {
@@ -58,8 +60,12 @@ const styles = StyleSheet.create({
         alignItems: "center",
         justifyContent: "center",
         textAlign: "center",
-
-
+    }, 
+    teste:{
+        width:350,
+        height:200,
+        backgroundColor:"white",
+        borderRadius:20,
     }
 })
 
