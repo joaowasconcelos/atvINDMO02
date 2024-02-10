@@ -1,9 +1,8 @@
 import Home from "../pages/Home";
-import Cursos from "../pages/Cursos";
 import Contato from "../pages/Contatos";
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import FontAwesome5 from 'react-native-vector-icons/FontAwesome5'
-import { Header } from "react-native/Libraries/NewAppScreen";
+import StackRoutes from "./StackRoutes"
 
 const Tab = createBottomTabNavigator()
 
@@ -30,7 +29,7 @@ export default function Routes() {
 
             <Tab.Screen
                 name="Cursos"
-                component={Cursos}
+                component={StackRoutes}
                 options={{
 
                     headerShown: false,
